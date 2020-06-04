@@ -1,4 +1,4 @@
-# :rotating_light: Police Killings Infographic
+# :rotating_light: Police Shootings Infographic
 
 This project is my little way of trying to support the protests happening right now in the US. The data used for this project comes from the [Washington Posts Police Shootings Dataset](https://github.com/washingtonpost/data-police-shootings).
 
