@@ -69,6 +69,11 @@ body {
 				color: $danger;
 				font-size: 4em;
 				font-weight: 600;
+				padding-bottom: 10px;
+				span {
+					font-size: 0.5em;
+					color: $secondary;
+				}
 			}
 
 			h3 {

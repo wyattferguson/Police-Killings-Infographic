@@ -16,20 +16,20 @@
 			</div>
 			<div class="row boxes">
 				<div class="box">
-					<h2>4757</h2>
+					<h2>4757 <span>89%</span></h2>
 					<h3>No Body Cam Footage</h3>
 				</div>
 				<div class="box">
-					<h2>1203</h2>
+					<h2>1203 <span>22%</span></h2>
 					<h3>Displayed Signs of Mental Illness</h3>
 				</div>
 				<div class="box">
-					<h2>178</h2>
+					<h2>178 <span>3%</span></h2>
 					<h3>Killed while carrying a toy weapon</h3>
 				</div>
 				<div class="box">
-					<h2>965</h2>
-					<h3>Unarmed or not reported with a weapon</h3>
+					<h2>965 <span>18%</span></h2>
+					<h3>Unarmed or not reported</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -72,13 +72,13 @@
 <script>
 export default {
 	metaInfo: {
-		title: "Everything is terrible."
+		title: "Everything is terrible.",
 	},
 	data() {
 		return {
 			scrolled: false,
 			minScroll: 1,
-			totalDead: 5360
+			totalDead: 5360,
 		};
 	},
 	methods: {
@@ -87,7 +87,7 @@ export default {
 			this.scrolled = Number((curY * this.totalDead).toFixed(0));
 			this.scrolled =
 				this.scrolled > this.totalDead - 20 ? this.totalDead : this.scrolled;
-		}
+		},
 	},
 	created() {
 		if (process.isClient) {
@@ -124,13 +124,13 @@ export default {
 		},
 		camera: function(value) {
 			return value == "True" ? "Yes" : "No";
-		}
+		},
 	},
 	computed: {
 		showCounter() {
 			return this.scrolled > this.minScroll ? true : false;
-		}
-	}
+		},
+	},
 };
 </script>
 
